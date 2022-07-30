@@ -1,0 +1,56 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<title id="title">Start</title>
+
+	<link rel="stylesheet" href="https://assets.zorincdn.com/start.zorin.com/style.css" type="text/css">
+	<link rel="icon" href="https://assets.zorincdn.com/images/favicon.ico">
+	<link href="https://assets.zorincdn.com/vendor/inter/inter.css" rel="stylesheet" type="text/css">
+
+	<script src="https://assets.zorincdn.com/start.zorin.com/scripts/jquery-1.4.2.min.js"></script>
+	<script src="https://assets.zorincdn.com/start.zorin.com/scripts/tools.js"></script>
+	<script src="https://assets.zorincdn.com/start.zorin.com/scripts/scripts.js"></script>
+	<script src="https://assets.zorincdn.com/start.zorin.com/engines/base.js"></script>
+
+	<script async defer data-domain="start.zorin.com" src="https://plausible.zorin.com/js/index.js"></script>
+
+</head>
+<body>
+	<div id="gradient"></div>
+
+	<div id="container" style="text-align:center;color:#ffffff;text-shadow: 0px 5px 10px rgba(0,0,0,0.125);">
+		 <h1 style="font-size:80px;margin-bottom:32px;letter-spacing:-0.022em;">Page not found.</h1>
+		 <a href="index.html" style="color:#ffffff;font-size:24px;letter-spacing:-0.019em;">Return to start page ›</a>
+	</div>
+
+	<footer>
+		<div class="legal">
+			<div class="info">
+				<div class="copyright"><span>© 2008 - 2022 Zorin Group</span> All Rights Reserved.<br>Any trademarks or logos used on this site are property of their respective owners.</div>
+				<div class="terms"><a href="https://zorinos.com/legal/terms">Terms of Service</a><a href="https://zorinos.com/legal/privacy">Privacy Policy</a><a href="https://zorinos.com/legal/cookies">Cookies Policy</a></div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script type="text/javascript">
+var currentTime = new Date().getHours();
+var element = document.getElementById("gradient");
+
+if (document.body) {
+    if (5 <= currentTime && currentTime < 7) {
+        element.className = "twilight";
+    } else if (7 <= currentTime && currentTime < 9) {
+        element.className = "sunrise";
+    } else if (9 <= currentTime && currentTime < 18) {
+        element.className = "day";
+    } else if (18 <= currentTime && currentTime < 20) {
+        element.className = "evening";
+    } else if (20 <= currentTime && currentTime < 22) {
+        element.className = "twilight";
+    }
+}
+</script>
+
+</html>
